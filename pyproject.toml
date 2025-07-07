@@ -1,0 +1,9 @@
+[project]
+name = "portfolio-generator"
+version = "0.1.0"
+description = "Generate your own web page and pdf portfolio from a singular json file."
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "jinja2>=3.1.6",
+]

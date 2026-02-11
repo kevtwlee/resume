@@ -254,6 +254,20 @@
             </section>
           {% endif %}
 
+          {% if certifications %}
+            <section>
+              <h2 class="section-heading">Certifications</h2>
+              <ul class="unstyled-list">
+                {% for cert in certifications %}
+                  <li>
+                    <h3>{{ cert.certificate }}</h3>
+                    <!-- <p class="section-label">{{ lang.fluency }}</p> -->
+                  </li>
+                {% endfor %}
+              </ul>
+            </section>
+          {% endif %}
+
           {% if skills %}
             <section>
               <h2 class="section-heading">Skills</h2>

@@ -259,10 +259,13 @@
               <h2 class="section-heading">Certifications</h2>
               <ul class="unstyled-list">
                 {% for cert in certifications %}
-                  <li>
-                    <h3>{{ cert.certificate }}</h3>
-                  </li>
-                {% endfor %}
+                  <h3>
+                    {% if cert.url %}
+                      <a href="{{ cert.url }}">{{ cert.certificate }}</a>
+                    {% else %}
+                      {{ cert.certificate }}
+                    {% endif %}
+                  </h3>
               </ul>
             </section>
           {% endif %}
